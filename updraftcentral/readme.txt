@@ -2,7 +2,7 @@
 Contributors: DavidAnderson, DNutbourne, aporter, snightingale
 Tags: remote control, management dashboard, multiple site management, remote management, remote dashboard, updates
 Requires at least: 4.4
-Tested up to: 6.6
+Tested up to: 6.9
 Stable tag: 0.8.30
 Requires PHP: 5.6
 Author: DavidAnderson
