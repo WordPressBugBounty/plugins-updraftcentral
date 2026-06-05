@@ -2,8 +2,8 @@
 Contributors: DavidAnderson, DNutbourne, aporter, snightingale
 Tags: remote control, management dashboard, multiple site management, remote management, remote dashboard, updates
 Requires at least: 4.4
-Tested up to: 6.9
-Stable tag: 0.8.30
+Tested up to: 7.0
+Stable tag: 0.8.32
 Requires PHP: 5.6
 Author: DavidAnderson
 Donate link: https://david.dw-perspective.org.uk/donate
@@ -122,6 +122,12 @@ The web browser that you visit the UpdraftCentral dashboard must not have not be
 We recognise and thank all those whose code and/or libraries are used and/or modified under the terms of their open source licences in UpdraftCentral, at: https://updraftplus.com/acknowledgements/
 
 == Changelog ==
+
+= 0.8.32 - 05/Jun/2026 =
+
+* SECURITY: If UpdraftPlus is installed and active, then previous versions allowed sites with an active Migrator key (paid versions only) or UpdraftCentral key (free and paid versions) to have unauthorised operations carried out on them. All users should update immediately both UpdraftCentral and UpdraftPlus.
+* TWEAK: Update bundled common-libs version
+* TWEAK: Update Updraft_Notice interface
 
 = 0.8.30 - 27/Mar/2024 =
 
@@ -707,4 +713,4 @@ For all our FAQs, and all other support documentation, please go here: https://u
 15. Manage themes on a controlled site (premium only)
 
 == Upgrade Notice ==
-* 0.8.30 : Various tweaks and fixes to improve efficiency. See changelog for full details. A recommended update for all.
+* 0.8.32 : Dependency updates, including a security fix. See changelog for full details. A recommended update for all.

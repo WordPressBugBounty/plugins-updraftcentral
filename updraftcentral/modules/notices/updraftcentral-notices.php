@@ -2,9 +2,9 @@
 
 if (!defined('UD_CENTRAL_DIR')) die('No direct access allowed');
 
-if (!class_exists('Updraft_Notices_1_2')) require_once(UD_CENTRAL_DIR.'/vendor/team-updraft/common-libs/src/updraft-notices/updraft-notices.php');
+if (!class_exists('Updraft_Notices_1_3')) require_once(UD_CENTRAL_DIR.'/vendor/team-updraft/common-libs/src/updraft-notices/updraft-notices.php');
 
-class UpdraftCentral_Notices extends Updraft_Notices_1_2 {
+class UpdraftCentral_Notices extends Updraft_Notices_1_3 {
 
 	protected static $_instance = null;
 
@@ -111,6 +111,14 @@ class UpdraftCentral_Notices extends Updraft_Notices_1_2 {
 		}
 
 		return UpdraftCentral()->include_template('notices/'.$template_file, $return_instead_of_echo, $advert_information);
+	}
+
+	/**
+	 * This function will enqueue the WordPress dashboard widget styles or scripts.
+	 *
+	 * @return void
+	 */
+	protected function widget_enqueue() {
 	}
 }
 

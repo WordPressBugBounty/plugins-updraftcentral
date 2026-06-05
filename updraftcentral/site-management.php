@@ -4,7 +4,7 @@
 Plugin Name: UpdraftCentral Dashboard
 Plugin URI: https://updraftcentral.com
 Description: Manage your WordPress sites from a central dashboard
-Version: 0.8.30
+Version: 0.8.32
 Text Domain: updraftcentral
 Domain Path: /languages
 Author: David Anderson + Team Updraft
@@ -27,7 +27,7 @@ if (!defined('UPDRAFTCENTRAL_TABLE_PREFIX')) define('UPDRAFTCENTRAL_TABLE_PREFIX
 
 if (!class_exists('UpdraftCentral')) :
 class UpdraftCentral {
-	const VERSION = '0.8.30';
+	const VERSION = '0.8.32';
 
 	// Minimum PHP version required to run this plugin
 	const PHP_REQUIRED = '5.3';
