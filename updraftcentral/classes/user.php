@@ -154,7 +154,7 @@ class UpdraftCentral_User {
 			$from = 'FROM '.$our_prefix.'events e, '.$our_prefix.'sites s';
 			$where = 'WHERE e.site_id = s.site_id AND s.user_id = '.$this->user_id;
 			if (isset($data['site_id'])) {
-				$where .= ' AND e.site_id = '.sanitize_text_field($data['site_id']);
+				$where .= ' AND e.site_id = '.absint($data['site_id']);
 			}
 			$order = 'ORDER BY e.time DESC';
 			$limit = 'LIMIT %d,%d';

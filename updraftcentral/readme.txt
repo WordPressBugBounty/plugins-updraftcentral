@@ -3,7 +3,7 @@ Contributors: DavidAnderson, DNutbourne, aporter, snightingale
 Tags: remote control, management dashboard, multiple site management, remote management, remote dashboard, updates
 Requires at least: 4.4
 Tested up to: 7.0
-Stable tag: 0.8.32
+Stable tag: 0.8.33
 Requires PHP: 5.6
 Author: DavidAnderson
 Donate link: https://david.dw-perspective.org.uk/donate
@@ -122,6 +122,10 @@ The web browser that you visit the UpdraftCentral dashboard must not have not be
 We recognise and thank all those whose code and/or libraries are used and/or modified under the terms of their open source licences in UpdraftCentral, at: https://updraftplus.com/acknowledgements/
 
 == Changelog ==
+
+= 0.8.33 - 10/Aug/2026 =
+
+* SECURITY: Fix improper sanitisation of a parameter. A logged-in hostile user could carry out an SQL query which would allow him to test database contents for matches. This allows eventual (very slow) extraction of database contents, if the user is allowed to carry out enough queries (by looking for matches, piece by piece).
 
 = 0.8.32 - 05/Jun/2026 =
 
@@ -713,4 +717,4 @@ For all our FAQs, and all other support documentation, please go here: https://u
 15. Manage themes on a controlled site (premium only)
 
 == Upgrade Notice ==
-* 0.8.32 : Dependency updates, including a security fix. See changelog for full details. A recommended update for all.
+* 0.8.33 : A security fix. See changelog for full details. A recommended update for all.
